@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <style>
+            th, td {
+                border: 1px solid #ddd;
+                padding:8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Employee Table</h1>
+        <table>
+            <thead>
+             <tr>
+                <th rowspan="2" oneclick="sortTable(0)">Name</th>
+                <th colspan="2">Details</th>
+                <th rowspan="2" oneclick="sortTable"(3)>Age</th>
+                <th rowspan="2" oneclick="sortTable(4)">Start Date</th>
+                <th rowspan="2" oneclick="sortTable(5)">Salary</th>
+             </tr>
+             <tr>
+                <th oneclick="sortTable(1)">Position</th>
+                <th oneclick="sortTable(2)">Office</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+                <td>John doe</td>
+                <td>Developer</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2015-01-01</td>
+                <td>$100,000</td>
+             </tr>
+             <tr>
+                <td>Jane smith</td>
+                <td>Designer</td>
+                <td>Londen</td>
+                <td>28</td>
+                <td>2016-03-15</td>
+                <td>$90,000</td>
+            </tr>
+            <tr>
+                <td>John doe</td>
+                <td>Manager</td>
+                <td>Paris</td>
+                <td>45</td>
+                <td>2010-11-20</td>
+                <td>$120,000</td>
+            </tr>                          
+            </tbody>
+        </table>
+    </body>
+</html>
