@@ -1,0 +1,26 @@
+.logo {
+    display: flex;
+    text-align: left;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+}
+
+.whole {
+    background-color: antiquewhite;
+}
+
+.ex {
+    text-align: right;
+    display: flex;
+}
+
+.one {
+    border: 1px black;
+}
+
+.midle {
+    text-align: center;
+}
