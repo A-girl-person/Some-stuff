@@ -1,0 +1,110 @@
+.whole {
+    padding: auto;
+    position: relative  ;
+    align-items: center;
+
+
+.main {
+    justify-content: center;
+    position: relative;
+    background-color: aquamarine    ;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+.headtop {
+    color: chocolate;
+}
+
+.headermid {
+    position: relative;
+    color: chocolate;
+    top: -80px;
+    font-size: 100px;
+    right: 0px;
+    left: 0px;
+}
+
+.headerbottom { 
+    position: relative;
+    display: flex;
+    color: chocolate;
+    left: 270px;
+    top: -144px;
+}   
+
+h1 {
+    text-align: center  ;
+}
+
+.lead {
+    position: absolute;
+    top: 300px;
+}
+
+.ledtop {
+    position: relative;
+    color: yellow;
+    left: 10px;
+    bottom: -80px;
+}
+
+.ledmid {
+    position: relative;
+    color: orange;
+    font-size: 30px;
+    bottom: -50px;
+    left: 10px;
+}
+
+.ledbot {
+    position: relative;
+    left: 10px;
+    color: red;
+    font-size: 40px;
+}
+
+.bar {
+    position: relative;
+    top: -80px;
+    left: -77px;
+}
+
+.price {
+    position: absolute;
+    top: 522px;
+    left: 20px;
+    z-index: 3;
+}
+
+.white {
+    position: relative;
+    top: -160px;
+    left: -192px;
+}
+
+.web {
+    position: relative;
+    background-color: white;
+    color: black;
+    top: -177px;
+    z-index: 6;
+    left: 10px;
+}
+
+.extra1 {
+    position: relative;
+    top: -220px;
+    left: 260px;
+    color: burlywood;
+    outline: black;
+}
+
+.toper {
+    position: relative;
+    top: 20px;
+}
