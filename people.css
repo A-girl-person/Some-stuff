@@ -1,0 +1,62 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #2e434e;
+}
+
+.textop {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: -100px;
+    background-color: #f1f1f1;
+    z-index: 2;
+    transition: top 0.5s;
+}
+
+.markrober {
+    color: #314550; 
+}
+
+.invis {
+    display: none;
+}
+
+.poweranger {
+    display: flex;
+}
+
+.bottom {
+    position: relative;
+}
+
+.textbot {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 143px;
+    padding-left: 100px;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    background-color: #f1f1f1;
+    justify-content: space-between;
+    transition: opacity 1s;
+}
+
+.text:hover .textop {
+    top: -230px;
+    
+    
+}
+
+.text:hover .textbot{
+    opacity: 1;
+}
