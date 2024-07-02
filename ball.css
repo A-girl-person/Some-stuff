@@ -1,0 +1,20 @@
+.ball {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    animation-name: balls;
+    animation-duration: 2s;
+    animation-iteration-count: 6;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes balls {
+    0% {top: 0px;}
+    25%  {top: 200px;}
+    50%{top: 0px;}
+    75%  {top: 200px;}
+    100%{top: 0px;}
+  }
