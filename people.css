@@ -33,7 +33,66 @@ html {
 }
 
 .bottom {
-    position: relative;
+
+}
+
+#one {
+    position: absolute;
+    animation-name: pop;
+    animation-duration: 2s;
+    animation-timing-function: 4;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}   
+
+#two {
+    position: absolute;
+    animation-name: pope;
+    animation-duration: 2.5s;
+    animation-timing-function: 4;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#three {
+    position: absolute;
+    animation-name: poper;
+    animation-duration: 3s;
+    animation-timing-function: 4;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#four {
+    position: absolute;
+    animation-name: popers;
+    animation-duration: 3.5s;
+    animation-timing-function: 4;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pop {
+     100% {opacity: 1;}
+}
+
+@keyframes pope {
+    0% {left: 10px}
+    100% {left: 550px; opacity: 1;}
+}
+
+@keyframes poper {
+    0% {left: 10px;}
+    100% {left: 1100px; opacity: 1;}
+}
+
+@keyframes popers {
+    0% {left: 10px;}
+    100% {left:1650px; opacity: 1;} 
 }
 
 .textbot {
@@ -51,12 +110,38 @@ html {
     transition: opacity 1s;
 }
 
-.text:hover .textop {
+#one:hover .textop {
     top: -230px;
-    
-    
 }
 
-.text:hover .textbot{
+#one:hover .textbot{
     opacity: 1;
+}
+
+#two:hover .textop {
+    top: -230px;
+}
+
+#two:hover .textbot{
+    opacity: 1;
+}
+
+#three:hover .textop {
+    top: -230px;
+}
+
+#three:hover .textbot{
+    opacity: 1;
+}
+
+#four:hover .textop {
+    top: -230px;
+}
+
+#four:hover .textbot{
+    opacity: 1;
+}
+
+.left {
+    object-fit: cover;
 }
