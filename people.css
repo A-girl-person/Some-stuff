@@ -145,3 +145,7 @@ html {
 .left {
     object-fit: cover;
 }
+
+#four:hover .pic {
+transform: scale(1.5);
+} 

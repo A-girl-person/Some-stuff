@@ -1,0 +1,14 @@
+.wheel {
+    height: 100px;
+    width: 100px;
+    border: 5px solid gray;
+    border-top-color: cyan;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}

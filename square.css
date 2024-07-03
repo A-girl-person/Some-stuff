@@ -1,0 +1,46 @@
+.first {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 10px;
+    left: 10px;
+    background-color: darkblue;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.second {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -90px;
+    left: 140px;
+    background-color: darkblue;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.third {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -190px;
+    left: 270px;
+    background-color: darkblue;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+    25% {transform: rotate(-180deg); opacity: 0.5; background-color: aqua; opacity: 1;} 
+    50% {transform: rotate(180deg); opacity: 0.5; background-color: darkblue; opacity: 1;} 
+    75% {transform: rotate(-180deg); opacity: 0.5; background-color: aqua; opacity: 1;} 
+    100% {transform: rotate(-180deg); opacity: 0.5; background-color: darkblue; opacity: 1;} 
+}

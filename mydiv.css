@@ -1,0 +1,18 @@
+.my {
+    display: flex;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: orange;
+    transition-duration: 2s;
+}
+
+.text {
+    color: #ffffff;
+}
+
+.my:hover {
+    transform: rotate(90deg), rotate(-180deg);
+}
