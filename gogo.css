@@ -66,9 +66,11 @@
 .heart {
     position: relative;
     border: 0px solid #ffffff;
+    overflow: hidden;
     border-radius: 5px;
     left: 1095px;
     top: -184px;
+    overflow: hidden;
 }
 
 .text {
@@ -165,6 +167,5 @@ wow:click {
 }
 
 .heart:hover {
-    background-size: 20%;
-    opacity: 0.4;
+    transform: scale(1.5);
 }

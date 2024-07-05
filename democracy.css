@@ -1,0 +1,18 @@
+
+.display {
+    display: flex;
+    justify-content: space-evenly;  
+    font-size: 30px;
+}
+    .bomb {
+        display: none;
+    }
+.body   {
+    background-color: #ffffff;
+}
+
+.color {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}

@@ -1,0 +1,18 @@
+.display {
+    display: none;
+}
+
+.bomb {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    text-align: center;
+    display: flex;
+    background-color: greenyellow;
+}
+
+body {
+    font: 5px;
+}
