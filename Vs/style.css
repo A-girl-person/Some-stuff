@@ -1,0 +1,53 @@
+html, body, main {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+.main {
+    display: block;
+    position: relative;
+    left: 30px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-left: 20;
+    margin-right: 100;
+    padding: 0;
+    background-color: cyan;
+    position: relative;
+    bottom: 22px;
+}
+
+.first {
+    border: 1px solid gray;
+}
+
+.extra {
+    background-color: paleturquoise;
+    margin-top: 100;
+    margin-bottom: 0;
+    position: relative;
+    top: 580px;
+}
+.middle {
+
+}
+
+.last {
+
+}
+
+.mail {
+
+}
+
+.fake {
+
+}
+
+.pass {
+    
+}
