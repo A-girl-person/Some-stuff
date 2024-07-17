@@ -123,3 +123,34 @@
     left: -80px;
 }
 
+.mem {
+    position: relative;
+    left: -60px;
+}
+
+.goth {
+    position: relative;
+    left: -50px;
+}
+
+.non {
+    position: relative;
+    left: -70px ;
+}
+
+.sar {
+    position: relative;
+    left: -80px;
+}
+
+.lore {
+    position: relative;
+    left: -50px;
+}
+
+.butt {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: -300px;
+}
