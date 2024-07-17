@@ -1,0 +1,16 @@
+li:first-child {
+    background-color: aqua;
+    color: white;
+}
+
+p:last-child {
+    color: red;
+}
+
+p:nth-child(odd) {
+    font-weight: bold;
+}
+
+p:nth-child(3n+3) {
+    font-style: italic;
+}
