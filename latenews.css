@@ -1,27 +1,39 @@
-html, body {
-    height: 100%;
-}
-.header {
-    text-align: center;
-}
-
-.p {
-    border: 2px;
-    border-color: black;
-    border-radius: 4%;
-    padding: 50px
-}
-
-.three {
+.main {
+  }
+  
+.box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+}
+
+.ph{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
 }
 
 .pic {
-    position: relative;
+    position: relative
 }
 
-.absolute {
-    position: absolute;
+.crub {
+display: flex;f
+
+}
+
+.box:hover {
+    color: linear-gradient(180deg,#fc004d 0,#000)
+    ;
+}
+
+.butt {
+
+}
+
+.tittle {
+    text-align: center;
 }

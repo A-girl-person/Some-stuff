@@ -123,6 +123,59 @@ body {
     border: 0px solid black; 
     background-color: rgb(91, 106, 176);
     border-radius: 20px;
-    top: -540px;
-    padding-bottom: 300px;
+    top: -530px;
+    padding-bottom: 350px;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#end-with-us {
+    position: absolute;
+    top: 650px;
+    left: 570px;
+}
+
+#i-am-atomic {
+    position: absolute;
+    top: 650px;
+    left: 790px;
+}
+
+#life {
+    position: absolute;
+    top: 650px;
+    left: 1010px;
+}
+
+#before {
+    position: relative;
+    top: -750px;
+    left: 470px;
+    padding: 10px 15px;
+    border: 0px solid white;
+    border-radius: 50%; 
+    cursor: not-allowed;
+} 
+
+#after {
+    position: relative;
+    top: -785px;
+    left: 1680px;
+    padding: 10px 15px;
+    border: 0px solid white;
+    border-radius: 50%;
+}
+
+#fun {
+    position: absolute;
+    top: 650px;
+    left: 1230px;
+}
+
+#crime {
+    position: absolute;
+    top: 650px;
+    left: 1450px;
 }

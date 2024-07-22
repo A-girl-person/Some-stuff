@@ -1,0 +1,72 @@
+.bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.gogo {
+    position: absolute;
+    top: 20px;
+    left: 360px;
+}
+
+.news   {
+    position: absolute;
+    top: 10px;
+    left: 520px;
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 630px;
+}
+
+.watch {
+    position: absolute;
+    top: 10px;
+    left: 790px;
+}
+
+.election {
+    position: absolute;
+    top: 30px;
+    left: 880px;
+}
+
+.english {
+    position: absolute;
+    top: 30px;
+    left: 1030px;
+}
+
+.search {
+    position: absolute;
+    top: 30px;
+    left: 1120px;
+}
+
+.mo {
+    position: absolute;
+    top: 15px;
+    left: 1200px;
+}
+
+.ng {
+
+}
+
+.ol {
+
+}
+
+.we {
+    position: relative;
+    display: flex;
+}
+
+.banner {
+    position: absolute;
+    left: 360px;
+    top: 90px;
+}

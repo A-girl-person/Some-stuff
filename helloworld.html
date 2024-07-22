@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>The script element</h1>
+        <p id="demo"></p>
+    <script> 
+
+        const score = 90;
+        let result = 'A';
+        if(score >= 90){
+            result = 'a';
+        } else if(score >= 80) {
+            result = 'b';
+        } else if(score >=70){
+            result = 'c';
+        } else {
+            result = 'F';
+        }
+        console.log();
+        document.getElementById("demo").innerHTML = result;
+    </script>
+    </body>
+</html>

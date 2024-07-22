@@ -103,19 +103,19 @@ body {
     margin-right: 20%;
 }
 
-#end-with-us {
+#woman {
     position: absolute;
     top: 650px;
     left: 570px;
 }
 
-#i-am-atomic {
+#crows {
     position: absolute;
     top: 650px;
     left: 790px;
 }
 
-#life {
+#girl {
     position: absolute;
     top: 650px;
     left: 1010px;
@@ -128,7 +128,6 @@ body {
     padding: 10px 15px;
     border: 0px solid white;
     border-radius: 50%; 
-    cursor: not-allowed;
 } 
 
 #after {
@@ -138,15 +137,16 @@ body {
     padding: 10px 15px;
     border: 0px solid white;
     border-radius: 50%;
+    cursor: not-allowed;
 }
 
-#fun {
+#reckless {
     position: absolute;
     top: 650px;
     left: 1230px;
 }
 
-#crime {
+#d-d {
     position: absolute;
     top: 650px;
     left: 1450px;

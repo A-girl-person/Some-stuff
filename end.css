@@ -3,7 +3,7 @@
     overflow: hidden;
     padding: 10px 0;
     display: flex;  
-    justify-content: center;
+    justify-content: space-around   ;
     color: white;
     margin-top: -10px;
     margin-left: -10px;
@@ -58,20 +58,18 @@
     padding-left: 1%;
     padding-top: 80px;
     margin-right: 80%;
-    padding-bottom: 510px;
     left: -445px;
     top: -19px;
     animation-name: menu;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: 1;
-    animation-fill-mode: forwards;
 }
 
 
 .stuff {
     color: white;
 }
-    
+
 #lines {
     position: absolute;
     z-index: 1;
@@ -83,73 +81,11 @@
 }
 
 @keyframes menu {
-    100%{ left:-10px;}
-} 
+    100% {left: -445px;}
+}
 
 body {
     background-color: rgb(49, 48, 74);
-}
-
-#other {
-    position: relative;
-    border: 0px solid black; 
-    background-color: rgb(91, 106, 176);
-    border-radius: 20px;
-    top: -1040px;
-    padding-bottom: 350px;
-    padding-top: 10px;
-    padding-left: 40px;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-#end-with-us {
-    position: absolute;
-    top: 650px;
-    left: 570px;
-}
-
-#i-am-atomic {
-    position: absolute;
-    top: 650px;
-    left: 790px;
-}
-
-#life {
-    position: absolute;
-    top: 650px;
-    left: 1010px;
-}
-
-#before {
-    position: relative;
-    top: -1260px;
-    left: 470px;
-    padding: 10px 15px;
-    border: 0px solid white;
-    border-radius: 50%; 
-    cursor: not-allowed;
-} 
-
-#after {
-    position: relative;
-    top: -1295px;
-    left: 1680px;
-    padding: 10px 15px;
-    border: 0px solid white;
-    border-radius: 50%;
-}
-
-#fun {
-    position: absolute;
-    top: 650px;
-    left: 1230px;
-}
-
-#crime {
-    position: absolute;
-    top: 650px;
-    left: 1450px;
 }
 
 .main {
@@ -160,14 +96,7 @@ body {
     padding: 30px;
     margin-right: 60%;
     left: 650px;
-    bottom: 1010px;
-}
-
-#new {
-    position: relative;
-    bottom: 30px;
-    left: -10px;
-    color: black;
+    bottom: 500px;
 }
 
 #tittle {
@@ -180,4 +109,11 @@ body {
     position: relative;
     left: 50px;
     top: 100px;
+}
+
+#butt {
+    position: relative;
+    top: 270px;
+    left: -480px;
+    padding: 20px;
 }
