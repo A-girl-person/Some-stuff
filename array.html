@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <html lang="eng" class="whole">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No</title>
+    <link rel="stylesheet" href="">
+    <link re="icon" type="image/x-icon" href=" ">
+</head>
+<body>
+    <script>
+        const five = ["one", "two", "three", "four", "five"];
+        console.log(five[2]);
+        //
+        const animals = ["Lion", "Tiger", "Elephant", "Giraffe"];
+        animals[1] = "Panda";
+        console.log(animals);
+        //
+        const books = ["1984", "Brave New World", "Fahrenheit 451"];
+        books[1] = "Death and beyond";
+        books.splice(2, 2, "Forgotten Realms");
+        console.log(books);
+        //
+        const numbers = [10, 20, 30, 40, 50];
+        console.log(numbers[2]);
+        //
+        const fruit1 = ["BANANA"];
+        const fruit2 = ["NANANA"];
+        const fruit3 = ["Banaan"]; //ban - AHN
+        //const allFruit = fruit1.concar(fruit2, fruit3);
+        //
+        const colors = ["Red", "Green", "Blue", "Yellow", "Purple", "Black"];
+        colors.includes("Red");
+        colors.includes("Green");
+        colors.includes("Blue");
+        colors.includes("Yellow");
+        colors.includes("Purple");
+        colors.includes("White");
+        colors.includes("Black");
+        //
+        const array1 = ["a", "b", "c"];
+        const array2 = ["a", "b", "c"];
+        function length(array1, array2) {
+            if (array1.length == array2.length) {
+                return "true";
+            } else {
+                return "false";
+            }
+        };
+        console.log(length(array1, array2));
+        //
+        const words = ["JavaScript", "is", "a", "versatile", "language"];
+        console.log(words.toString());
+        //
+        const person = ["john", "Doe", 28];
+        console.log(person);
+        //
+        const cars = [
+        { make: "Toyota", model: "Corolla", year: 2020 },
+        { make: "Honda", model: "Civic", year: 2019 },
+        { make: "Ford", model: "Focus", year: 2021 }
+        ];
+        //
+        const items = ["apple", "banana", "cherry"];
+        function item(items, oldItems, newItems) {
+            if(items.includes(oldItems)){
+                return (items[items.indexOf(oldItems)] = newItems);
+            } else {
+                return;
+            };
+        };
+        console.log(item(items, 'banana', 'kiwi'));
+        console.log(item(items, 'apple', 'mango'));
+        console.log(item(items, 'cherry', 'rasberry'));
+        console.log(items);
+        //
+        let user = {
+        username: "adminUser",
+        role: "Uuganaa"
+        };
+        function ad() {
+            if (user.role == "admin") {
+                Object.defineProperty(user, "hasAccess", {value: true});
+            } else {
+                Object.defineProperty(user, "hasAccess", {value: false});
+            };
+        };
+        ad();
+        console.log(user);
+        //
+        const car = {
+        make: "Toyota",
+        model: "Corolla",
+        year: 2019,
+        isElectric: false
+        };
+        function de() {
+            if (car.isElectric == false) {
+                    delete car.isElectric;
+            } else {
+                // no
+            };
+        };
+        de();
+        console.log(car);
+    </script>
+</body>
+</html>

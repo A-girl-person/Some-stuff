@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <html lang="eng" class="whole">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No</title>
+    <link rel="stylesheet" href="">
+    <link re="icon" type="image/x-icon" href=" ">
+</head>
+<body>
+    <script>
+        const car = {
+            brand: "9",
+            model: 11,
+            year: 1911
+        }
+        const person = {
+            firstname: "Uugan",
+            lastname: "Baatar",
+            age: 31,
+        }
+        const  city = "Hell";
+        const calculator = {
+            sum: function(a, b) {
+                return a + b;
+            },
+            subtract: function(a, b) {
+                return a - b;
+            }
+        };
+        const student = {
+            name: "Uuganaa",
+            age: 99,
+            address: {
+                street: "Downtown",
+                city: "Chinatown",
+                zip: "10013",
+                getFullAddress: function () {
+                    return `${this.street} in ${this.city} zip: ${this.zip}`;
+                },
+            },
+        };
+
+        const user = {
+            name: "Uuganaa",
+            age: 99,
+            updateName: function (name) {
+                return this.name = "Baatar";
+            },
+            greet: function() {
+                return `Goodbey, my name is not ${this.name}`
+            }
+        };
+        const profile = {
+        username: "johndoe",
+        email: "johndoe@example.com",
+        settings: {
+            theme: "light",
+            notifications: true,
+        },
+        updateTheme: function (theme) {
+            return this.settings.theme = "dark";
+        },
+        updateNotifications: function (notifications) {
+            return this.settings.notifications = false;
+        }
+        };
+            const smartHome = {
+        lights: true,
+        thermostat: false,
+        security: true,
+            toggleLights: function(lights) {
+            return this.lights = false;
+            },
+            toggleThermostat: function(thermostat) {
+            return this.thermostat = true;
+            },
+            toggleSecurity: function(security) {
+            return this.lights = false;
+            }
+        };
+        const students = {
+        name: "Alice",
+        age: 18,
+        grades: {
+            math: 90,
+            science: 85,
+            english: 88,
+        },
+        updateName: function(name) {
+            return this.name = "Uuganaa";
+        },
+        updateSubject: function(grades) {
+            return this.grades = {
+                french: 50,
+                brazil: 50,
+                deutch: 50
+            };
+        }
+        };
+        console.log(students.updateSubject());
+        console.log("Name:", students.updateName(name));    
+        smartHome.toggleLights("lights", false);
+        smartHome.toggleThermostat("thermostat", true);
+        smartHome.toggleSecurity("security", false);
+        console.log("Lights", smartHome.toggleLights());
+        console.log("Thermostat", smartHome.toggleThermostat());
+        console.log("Security", smartHome.toggleSecurity());
+        user.updateName("name"); // name change
+        console.log(user.greet()); // greet
+        console.log("Theme:", profile.updateTheme()); // theme change
+        console.log("Notifications:", profile.updateNotifications()); // notification change
+        console.log(person.firstname); // person first name
+        person.age = 99; // person age changed
+        console.log(person.age); // person age
+        console.log("brand:", car.brand); //car
+        console.log("model:", car.model); //car
+        console.log("year:", car.year); //car
+        console.log(calculator.sum(5, 3)); // calculator
+        console.log(calculator.subtract(5, 3)); // calculator
+        console.log(student.address.getFullAddress()); // ur home
+    </script>
+</body>
+</html>

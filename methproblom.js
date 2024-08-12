@@ -65,5 +65,5 @@ let employees = [
     { name: "Dave", department: "engineering", skills: ["JavaScript", "Ruby"] },
     { name: "Eve", department: "sales", skills: ["Negotiation", "Communication"] }
 ];
-let pro = employees.filter(employees => employees.skill);
+let pro = employees.filter(employees => employees.skill     );
 console.log(pro);
