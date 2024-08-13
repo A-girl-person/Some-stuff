@@ -1,0 +1,11 @@
+#secret {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    border-color: white;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+}

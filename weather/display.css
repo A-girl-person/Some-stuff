@@ -15,9 +15,6 @@
     display: flex;
 }
 
-.enter {
-    justify-content: center;
-}
 
 #get-weather {
     padding: 5px;
