@@ -1,0 +1,21 @@
+
+html {
+    background-color: #FFDDD4;
+}
+
+#main-content {
+    background-color: white;
+    margin: 100px;
+}
+
+#food-pls {
+    display: flex;
+    display: grid;
+    justify-content: space- evenly;
+    border: 2px solid hsl(14, 65%, 9%);
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+}

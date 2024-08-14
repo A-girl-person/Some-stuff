@@ -37,6 +37,33 @@ class Contact {
         return profileDiv;
     }
 }
+// end of Contact class
+class ContactManager {
+        constructor() {
+            this.contacts = [];
+        }
+        async fetchContacts() {
+            const response = await fetch("https://jsonplaceholder.typicode.com/users");
+            const data = await response.json();
+            this.contacts = data.map(
+                (user) => new Concat(user.id, user.name, user.email, user.phone)
+            );
+            this.displayConcacts();
+        }
+        async addContact(name, email, phone) {
+            const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": :"application/json",
+                },
+                body: JSON.stringify({name, email, phone}),
+            });
+
+
+
+
+        }
+}
 
     fetch(`https://jsonplaceholder.typicode.com/users`)
     .then((response) => response.json())
