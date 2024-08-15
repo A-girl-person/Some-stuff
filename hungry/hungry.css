@@ -1,6 +1,7 @@
 
 html {
-    background-color: #FFDDD4;
+    background-color: hsl(20, 50%, 98%);
+    font-weight: 400, 600, 700;
 }
 
 #main-content {
@@ -9,13 +10,69 @@ html {
 }
 
 #food-pls {
-    display: flex;
     display: grid;
-    justify-content: space- evenly;
-    border: 2px solid hsl(14, 65%, 9%);
     grid-template-columns: auto auto auto;
-    row-gap: 50px;
-    column-gap: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+}
+
+#border {
+    border: 2.5px solid white;
+    border-radius: 10px;
+}
+
+#border:hover {
+    border-color: hsl(14, 86%, 42%);
+}
+
+.name {
+    font-size: 16px;
+}
+
+#price {
+    color: hsl(14, 86%, 42%)
+}
+
+
+#category {
+    color: hsl(7, 20%, 60%)
+}
+
+#cart-icon {
+    position: relative;
+    top: 4px;
+}
+
+#cart-add {
+    position: relative;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-right: 25px;
+    padding-left: 25px;
+    top: -27px;
+    left: 32px;
+    border-color: hsl(14, 86%, 42%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;   
+}
+
+.main-content {
+    background: hsl(20, 50%, 98%);
+    padding: 50px 60px;
+    display: flex;
+}
+
+.main-content .desserts {
+    width: 65%;
+}
+
+.main-content .cards {
+    width: 35%;
+}
+
+body {
+    background-image: url();
+    background-color: pink;
 }
