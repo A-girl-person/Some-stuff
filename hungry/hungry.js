@@ -1,11 +1,12 @@
 import datas from "./data.js";
 
 class Items {
-    constructor(image, name, category, price) {
+    constructor(image, name, category, price, id) {
         this.image = image;
         this.name = name;
         this.category = category;
         this.price = price;
+        this.id = id;
     }
     render() {
         const profileDiv = document.createElement("div");
@@ -17,6 +18,12 @@ class Items {
         <p class="name">${this.name}</p>
         <p id="price">$${this.price}</p>
         `;
+
+        document.appendChild(profileDiv);
+        document.getElementById("cart-add").addEventListener("click", () => {
+            document.getElementById("cart-add").innerHTML = `<button>stuff</button>`;
+        });
+
         return profileDiv;
     }
     cart() {
@@ -25,9 +32,8 @@ class Items {
         profileDiv2.innerHTML = `
         <div>
             <h2 id="cart-count">Your Cart ()</h2>
-            <img src="./assets/images/illustration-empty-cart.svg">
             <p>Order total</p> <p>$</p>
-            <button id="carbon"><img id="broc" src="">This is a <mark> carbon-neutral </mark> delivery</button>
+            <button id="carbon"><img id="broc" src="./assets/images/icon-carbon-neutral.svg">This is a <mark> carbon-neutral </mark> delivery</button>
             <button id="confirm">Confrirm Order</button>
         </div>
         `;
@@ -48,21 +54,12 @@ datas.forEach((userData) => {
     contactInfo.appendChild(items.render());
 });
 
-const orderInfo = document.getElementById("free-food");
-orderInfo.innerHTML = "";
-
-const items = new Items(
-   '','','',''
-);
-
-orderInfo.appendChild(items.cart());
-// datas.forEach((userData) => {
-//     let poor = 0;
-//     document.getElementById("cart-add").addEventListener("click", () => {
-//         function boogie(poor) {
-//             return poor = poor + 1;
-//         }
-//         console.log(boogie(poor));
-//     });
-//     orderInfo.appendChild(items.cart());
-// });
+document.getElementById("cart-add").addEventListener("click", () => {
+    const orderInfo = document.getElementById("free-food");
+    orderInfo.innerHTML = "";
+    const items = new Items(
+        '', '', '', ''
+    );
+    orderInfo.appendChild(items.cart());
+    console.log('fu')
+});

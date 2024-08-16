@@ -15,10 +15,9 @@ html {
 }
 
 #border {
-    border: 2.5px solid white;
+    border: 2.5px solid hsl(13, 31%, 94%);
     border-radius: 10px;
 }
-
 #border:hover {
     border-color: hsl(14, 86%, 42%);
 }
@@ -28,12 +27,12 @@ html {
 }
 
 #price {
-    color: hsl(14, 86%, 42%)
+    color: hsl(14, 86%, 42%);
 }
 
 
 #category {
-    color: hsl(7, 20%, 60%)
+    color: hsl(7, 20%, 60%);
 }
 
 #cart-icon {
@@ -59,7 +58,7 @@ html {
 }
 
 .main-content {
-    background: hsl(20, 50%, 98%);
+    background: hsl(13, 31%, 94%);
     padding: 50px 60px;
     display: flex;
 }
@@ -75,4 +74,23 @@ html {
 body {
     background-image: url();
     background-color: pink;
+}
+
+#carbon {
+    padding: 10px 30px;
+    border: 0px solid white;
+}
+
+#broc {
+    position: relative;
+    right: 3px;
+    top: 3px;
+}
+
+#confirm {
+    padding: 10px 90px;
+    border: 2.5px solid hsl(14, 86%, 42%);
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-radius: 50px;
 }

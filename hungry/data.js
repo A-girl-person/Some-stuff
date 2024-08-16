@@ -6,9 +6,9 @@ const datas = [
         "tablet": "./assets/images/image-waffle-tablet.jpg",
         "desktop": "./assets/images/image-waffle-desktop.jpg"
     },
-    "name": "Waffle with Berries",
-    "category": "Waffle",
-    "price": 6.50
+        "name": "Waffle with Berries",
+        "category": "Waffle",
+        "price": 6.50
     },
     {
         "image": {
