@@ -1,0 +1,78 @@
+.main-image {
+    position: absolute;
+    top: 59.5px;
+    right: 0px;
+    object-fit: cover;
+}
+
+.right-10 {
+    position: absolute;
+    right: 10px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-padding {
+    position: relative;
+    top: 100px;
+    left: 20%;
+}
+
+.purple {
+    background-color: #0e062e;
+}
+
+.color-white {
+    color:white;
+    margin: 0px;
+}
+
+.color-gray {
+    color: #58667f;
+}
+
+.height-800 {
+    height: 800px;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    border: 1px solid #7735de;
+    border-radius: 20px;
+    top: 50px;
+    color: #7735de;
+}
+
+.Uuganaa {
+    background-color: #000217;
+    height: 1000px;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    margin-top: 80px;
+}
+
+.z-index {
+    z-index: 10;
+}
+
+.width-100 {
+    width: 100px;
+}
+
+.ino-img {
+
+}
+
+.make-shift-border {
+    border: 2px solid white;
+}
