@@ -42,19 +42,27 @@
     position: relative;
     text-align: center;
     border: 1px solid #7735de;
-    border-radius: 20px;
+    border-radius: 20px; 
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    padding-top: 6px;
+    padding-bottom: 6px;
     top: 50px;
     color: #7735de;
 }
 
 .Uuganaa {
     background-color: #000217;
-    height: 1000px;
+    height: 1200px;
 }
 
 .mid {
     display: flex;
     justify-content: center;
+}
+
+.mid-text {
+    text-align: center;
 }
 
 .top {
@@ -69,10 +77,102 @@
     width: 100px;
 }
 
-.ino-img {
-
-}
 
 .make-shift-border {
-    border: 2px solid white;
+    margin-left: 19%;
+    border: 1px solid #46757c;
+    height: 600px;
+    width: 1400px;
+}
+
+.flex {
+    display: flex;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.incognito-tabs {
+    color: #5b29af;
+    background-color: #000217;
+    border-color: #5b29af;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;    
+}
+
+.space-left {
+    position: relative;
+    left: 100px;
+}
+
+.space-right {
+    position: relative;
+    right: 100px;
+}
+
+.space-left-more {
+    position: relative;
+    left: 200px;
+}
+
+.space-right-more {
+    position: relative;
+    right: 200px;
+}
+
+.pro {
+    padding-left: 8%;
+}
+
+.top-border {
+    position: relative;
+    top: 100px;
+}
+
+.ino-img {
+    position: relative;
+    left: 730px;
+    bottom: 130px;
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.top {
+    position: relative;
+    bottom: 10px;
+}
+
+.go-up {
+    position: relative;
+    bottom: 380px;
+}
+
+.down-a-bit {
+    position: relative;
+    top: 10px;
+}
+
+.color-purple {
+    color: #5b29af;
+}
+
+.go-up-little-less {
+    position: relative;
+    bottom: 300px;
+}
+
+.inv-img {
+    position: relative;
+    left: 320px;
+    border-radius: 15px;
+}
+
+.color-blue {
+    color: #0ec9f0;
 }
