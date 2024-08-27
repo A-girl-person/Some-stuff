@@ -1,0 +1,64 @@
+@import 'old';
+
+$default-top-padding: 20%;
+$default-height: 800px;
+$dark-blue: #000217;
+$default-border-radius: 20px;
+$purple: #5b29af;
+$margin-full: 100%;
+$gray: #1e2a3c;
+$circle-radius: 50%;
+
+.cards {
+    height: 300px;
+    & .cards-padding-top{
+        padding-top: $default-top-padding;
+    }
+}
+.cards-grid {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 30px;
+    & .cards-bottom {
+        margin-top: 8%;
+    }
+}
+
+.testimonial {
+    height: $default-height;
+    background-color: $dark-blue;
+}
+
+.header-border {
+    display: flex;
+    justify-content: center;
+    border-radius: $default-border-radius;
+    border: 1px solid $purple;
+    padding: 10px;
+    width: 120px;
+    margin: 0 auto;
+    & .border-black {
+        border-color: black;
+    }
+}
+
+.comment {
+    margin-top: 10%;
+    border:1px solid #334154;
+    border-radius: $default-border-radius;
+    padding: 40px 20px;
+    background-color: $gray;
+    width: 600px;
+    margin: 4% auto;
+}
+
+.round {
+    border-radius: $circle-radius;
+}
+
+.integration {
+    height: $default-height;
+    background-color: $gray;
+}

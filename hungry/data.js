@@ -1,5 +1,6 @@
 const datas = [
     {
+        "id": 1,
     "image": {
         "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
         "mobile": "./assets/images/image-waffle-mobile.jpg",

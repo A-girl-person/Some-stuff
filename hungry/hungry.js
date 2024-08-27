@@ -21,7 +21,7 @@ class Items {
 
         document.appendChild(profileDiv);
         document.getElementById("cart-add").addEventListener("click", () => {
-            document.getElementById("cart-add").innerHTML = `<button>stuff</button>`;
+            document.getElementById("cart-add").innerHTML = `<button></button>`;
         });
 
         return profileDiv;
