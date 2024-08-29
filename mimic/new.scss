@@ -8,6 +8,7 @@ $purple: #5b29af;
 $margin-full: 100%;
 $gray: #1e2a3c;
 $circle-radius: 50%;
+$icon-bg-color: #1d293b;
 
 .cards {
     height: 300px;
@@ -61,4 +62,20 @@ $circle-radius: 50%;
 .integration {
     height: $default-height;
     background-color: $gray;
+}
+
+.icon {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    border-radius: $default-border-radius;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt-2 {
+    margin-top: 10%;
 }
