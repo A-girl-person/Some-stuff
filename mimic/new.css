@@ -362,6 +362,116 @@
 }
 
 .integration {
+  height: 500px;
+  background-color: #334155;
+}
+
+.icon {
+  border: 0px solid white;
+  padding: 10px;
+  background-color: #1d293b;
+  border-radius: 20px;
+}
+
+.track {
+  display: flex;
+  border: 0px solid white;
+  justify-content: space-between;
+  margin: 0 20%;
+}
+
+.mt-2 {
+  margin-top: 10%;
+}
+
+.try {
+  border-radius: 10px;
+  padding: 10px;
+  border-color: white;
+  margin-top: 7%;
+}
+
+.support {
   height: 800px;
-  background-color: #1e2a3c;
+  background-color: #000217;
+}
+
+.header {
+  color: #5b29af;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #5b29af;
+}
+
+.support-pic {
+  border-radius: 20px;
+}
+
+.m {
+  border: 0px solid black;
+  justify-content: space-evenly;
+  margin: 0 20%;
+  padding-top: 5%;
+}
+
+.next-mid {
+  padding: 10% 0;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5b29af;
+}
+
+.left-10 {
+  position: relative;
+  left: 10px;
+}
+
+.krieg {
+  height: 500px;
+  background-color: #000217;
+  padding: 0 28%;
+}
+
+.join {
+  border: 1px solid #251350;
+  background-color: #251350;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  border-radius: 15px;
+}
+
+.email {
+  border: 1px solid #5b29af;
+  width: 230px;
+  color: #5b29af;
+  border-radius: 5px;
+}
+
+.join.now-b {
+  border: 1px solid #5b29af;
+  color: White;
+  background-color: #5b29af;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.questions {
+  height: 800px;
+  background-color: #000217;
+}
+
+.hover-purple:hover {
+  color: #5b29af;
+}
+
+.bg-trans {
+  background-color: #000217;
+  border-width: 0px;
+}
+
+.t-border {
+  border-top: #1c2539;
 }/*# sourceMappingURL=new.css.map */
