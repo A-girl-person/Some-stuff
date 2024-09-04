@@ -1,14 +1,20 @@
 import movies from "./movies";
 import MovieItem from "./MovieItem";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-function MovieList() {
-  return (
-    <div className="movie-list">
-      {movies.map((movie) => (
-        <MovieItem key={movie.id} movie={movie} />
-      ))}
-    </div>
-  );
+function MovieList({ unwantedMovies }) {
+    return (
+        <div className="movie-list">
+            <Container >
+                <Row className="gap">
+        {unwantedMovies.map((movie) => (
+            <MovieItem key={movie.id} movie={movie}/>
+        ))}
+        </Row>
+        </Container>
+        </div>
+    );
 }
 
 export default MovieList;

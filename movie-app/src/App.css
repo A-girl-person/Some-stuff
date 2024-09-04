@@ -40,3 +40,11 @@
 .bg-gray {
   background-color: #282c34;
 }
+
+.txt-left {
+  text-align: left; 
+}
+
+.gap {
+  row-gap: 50px;
+}

@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import movies from './Movie/movies';
+import movies from "./Movie/movies";
 
 function Slider() {
     return (
@@ -44,20 +44,10 @@ function Slider() {
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img src="./logo192.png" width={500} height={750} text="Third slide" />
+            <img src="https://m.media-amazon.com/images/I/61MkHitfdiL.jpg" width={500} height={750} text="" />
             <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3></h3>
             <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="./logo192.png" width={500} height={750} text="Third slide" />
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
             </Carousel.Caption>
         </Carousel.Item>
