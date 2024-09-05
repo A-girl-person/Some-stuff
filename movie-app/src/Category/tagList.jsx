@@ -8,7 +8,7 @@ function TagList({onClick, setUnwantedMovies, currentCategory}) {
         <div>
             {categories.map((myCategory) => (
             <Tag key={categories.id} myCategory={myCategory} onClick={onClick} currentCategory={currentCategory} setUnwantedMovies={setUnwantedMovies}/>
-        ))}
+        ))}``
         </div>
     );
 }

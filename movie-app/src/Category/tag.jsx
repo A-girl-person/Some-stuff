@@ -14,7 +14,7 @@ function Tag({myCategory, onClick, setUnwantedMovies, currentCategory}) {
     return (
         <Card
             onClick={onCategoryClick}
-            >
+            className="width-150">
             <CardHeader>{myCategory.category}</CardHeader>
         </Card>
 );}

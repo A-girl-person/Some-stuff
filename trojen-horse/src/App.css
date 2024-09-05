@@ -37,19 +37,32 @@
   }
 }
 
-.bg-gray {
+.Light {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Dark {
   background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.txt-left {
-  text-align: left; 
+.Dark .form-control,
+.Dark .form-control:focus {
+  background-color: black;
+  color: white;
 }
 
-.gap {
-  row-gap: 50px;
+.Light .form-control {
+  background-color: white;
+  color: black;
 }
 
-.width-150 {
+.mid {
   display: flex;
-  width: 150px;
+  justify-content: center;
 }
