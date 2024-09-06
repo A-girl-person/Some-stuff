@@ -1,58 +1,101 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Carousel from "react-bootstrap/Carousel";
-import movies from "./Movie/movies";
 
 function Slider() {
-    return (
-        <Carousel>
-        <Carousel.Item>
-            <img src="./Inception.jpg" width={500} height={750} text="Hello" />
-            <Carousel.Caption>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="./The-Shawshank-Redemption.jpg" width={500} height={750} text=" slide" />
-            <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="./The-Godfather.jpg" width={500} height={750} text="" />
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="./The-Dark-Knight.jpg" width={500} height={750} text="Third slide" />
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="./Pulp-Fiction.jpg" width={500} height={750} text="Third slide" />
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src="https://m.media-amazon.com/images/I/61MkHitfdiL.jpg" width={500} height={750} text="" />
-            <Carousel.Caption>
-            <h3></h3>
-            <p>
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        </Carousel>
-    );
+  return (
+    <Carousel>
+      <Carousel.Item>
+        <img
+          src="https://communist.red/wp-content/uploads/2022/08/godfather.png"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://ntvb.tmsimg.com/assets/p6319_v_h8_bi.jpg?w=1280&h=720"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://www.musicparadigm.com/wp-content/uploads/2015/02/godfather3.jpg"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/556eb0dbe4b01f283c9a5e53/1435599628209-5AOUQE69JWN1VMFXPC1L/image-asset.jpeg"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/52/373/222/john-wick-movie-keanu-reeves-john-wick-poster-wallpaper-preview.jpg"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://w0.peakpx.com/wallpaper/1015/417/HD-wallpaper-movie-john-wick-chapter-2-john-wick-keanu-reeves.jpg"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://countzeroor.com/wp-content/uploads/2019/05/johnwick001.jpg"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShtyOnT3qokfIU6LoDdQoHROhE32NjKCd6ag&s"
+          className="slider-img"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://benjweinberg.com/wp-content/uploads/2017/07/zabrxyn.png?w=640"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://resizing.flixster.com/r8y9--Hg_VjurbPyckyxAFs0QQA=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21702_v_h9_ab.jpg"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://facts.net/wp-content/uploads/2023/10/35-facts-about-the-movie-rush-hour-2-1698586850.jpg"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGB6WzK7sVBVTV0C9P0RKMhk5QH-NGUoMHQ&s"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitKazfHx0jci2P7fdEj8HevEL3u4AidMrfQ&s"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/197/1015/629/johnny-english-reborn-johny-english-reborn-advertisement-wallpaper-preview.jpg"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="https://www.pastposters.com/cw3/assets/product_full/JamieR-ROB/johnny-english-strikes-again-cinema-quad-movie-poster-(1).jpg"
+          className="slider-img"
+        ></img>
+      </Carousel.Item>
+    </Carousel>
+  );
 }
 
 export default Slider;

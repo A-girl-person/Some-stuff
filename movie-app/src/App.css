@@ -42,14 +42,30 @@
 }
 
 .txt-left {
-  text-align: left; 
+  text-align: left;
 }
 
 .gap {
   row-gap: 50px;
 }
 
-.width-150 {
-  display: flex;
-  width: 150px;
+.slider-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.tag-list {
+  color: aqua;
+}
+
+.genre {
+  display: grid;
+  padding: 20px;
+}
+
+.card-header {
+  margin: 15px;
+  color: aqua;
+  background-color: aqua;
 }

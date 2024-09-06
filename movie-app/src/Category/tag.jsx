@@ -1,23 +1,25 @@
 import { Card, CardHeader } from "react-bootstrap";
-import categories from "./categories";
-import movies from '../Movie/movies';
+import movies from "../Movie/movies";
+import Col from "react-bootstrap/Col";
 
-function Tag({myCategory, onClick, setUnwantedMovies, currentCategory}) {
-    const onCategoryClick = () => {
-        onClick(myCategory.category);
-        
-        const unWantedMovies = movies.filter((movie) => movie.genre === currentCategory);
-        
-        setUnwantedMovies(unWantedMovies);
-    }
+function Tag({ myCategory, onClick, setUnwantedMovies, currentCategory }) {
+  const onCategoryClick = () => {
+    onClick(myCategory.category);
 
-    return (
-        <Card
-            onClick={onCategoryClick}
-            className="width-150">
-            <CardHeader>{myCategory.category}</CardHeader>
-        </Card>
-);}
+    const unWantedMovies = movies.filter(
+      (movie) => movie.genre === currentCategory
+    );
 
+    setUnwantedMovies(unWantedMovies);
+  };
+
+  return (
+    <Col>
+      <Card onClick={onCategoryClick}>
+        <CardHeader>{myCategory.category}</CardHeader>
+      </Card>
+    </Col>
+  );
+}
 
 export default Tag;
