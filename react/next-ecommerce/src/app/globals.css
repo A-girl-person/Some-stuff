@@ -29,3 +29,17 @@ body {
 .color-white {
   color: white;
 }
+
+.product-image {
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 500px;
+}
+
+.text {
+  padding-left: 10%;
+}
+
+.all {
+  margin: 10% 25%;
+}

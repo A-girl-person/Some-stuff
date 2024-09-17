@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Categories } from "./categories";
+import React from "react";
 
 function Header() {
   return (
@@ -8,6 +10,7 @@ function Header() {
           <Link href="http://localhost:3000" className="color-white">
             Home
           </Link>
+          <Categories />
         </h1>
       </nav>
     </header>
