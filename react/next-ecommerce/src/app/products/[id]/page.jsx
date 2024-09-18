@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Header from "@/app/Categories/Header";
+import MicrosoftSupport from "@/app/IndianScammer";
 
 const page = async ({ params: { id } }) => {
   let data = await fetch(`https://fakestoreapi.com/products/${id}`);
@@ -21,6 +22,9 @@ const page = async ({ params: { id } }) => {
           <p>Rating {product.rating.rate}</p>
           <p>Reviewed by {product.rating.count} people.</p>
         </div>
+      </div>
+      <div>
+        <MicrosoftSupport product={product} />
       </div>
     </div>
   );

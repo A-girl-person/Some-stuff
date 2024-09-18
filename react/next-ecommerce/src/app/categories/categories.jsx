@@ -16,7 +16,6 @@ export function Categories() {
   }, []);
 
   if (!categories) return <div>Loading...</div>;
-
   return (
     <>
       {categories.map((cat) => (
