@@ -1,50 +1,35 @@
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import Slider from "components/Slick";
+import Image from "next/image";
 
-export default async function Home() {
+async function Page() {
   let data = await fetch("https://fakestoreapi.com/products");
   let products = await data.json();
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 2,
-  };
+  console.log(products, "data");
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div>
-          <div className="grid grid-cols-4 gap-11 m-8 p-11">
-            {products.map((product) => {
-              return (
-                <Link href={`/products/${product.id}/`} key={product.id}>
-                  <div className="">
-                    <div className="border p-auto relative w-[300px] h-[400px]">
-                      <Image
-                        src={product.image}
-                        fill
-                        className="object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <p>{product.title}</p>
-                      <p>USD: {product.price}</p>
-                      <p>Category: {product.category}</p>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </Slider>
+    <div>
+      <div className="grid grid-rows-4 grid-cols-4 gap-9">
+        {products.map((product) => (
+          <Link href={`/products/${product.id}/`} key={product.id}>
+            <div className="">
+              <div className="border p-auto relative w-[300px] h-[400px]">
+                <Image
+                  src={product.image}
+                  fill
+                  className="object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>{product.title}</p>
+                <p>USD: {product.price}</p>
+                <p>Category: {product.category}</p>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
+
+export default Page;
