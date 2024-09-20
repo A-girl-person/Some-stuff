@@ -14,7 +14,6 @@ export function Categories() {
     }
     fetchCategories();
   }, []);
-
   if (!categories) return <div>Loading...</div>;
   return (
     <>

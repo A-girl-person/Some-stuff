@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Header from "@/app/Categories/Header";
 import MicrosoftSupport from "../../../components/Microsoft";
-import Link from "next/link";
+import AddToCart from "@/components/AddToCart";
 
 const page = async ({ params: { id } }) => {
   let data = await fetch(`https://fakestoreapi.com/products/${id}`);
@@ -24,11 +24,7 @@ const page = async ({ params: { id } }) => {
           <p>Rating {product.rating.rate}</p>
           <p>Reviewed by {product.rating.count} people.</p>
           <div>
-            <Link href={"/"}>
-              <button className="border-2 p-3 rounded-2xl bg-yellow-300">
-                <p>Add to cart</p>
-              </button>
-            </Link>
+            <AddToCart product={product} />
           </div>
         </div>
       </div>

@@ -1,8 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Categories } from "./categories";
 import React from "react";
+import Cart from "@/components/Cart";
+import Image from "next/image";
+import { useState } from "react";
 
 function Header() {
+  const [show, setShow] = useState(false);
   return (
     <header className="bg-black">
       <nav>
@@ -12,6 +17,17 @@ function Header() {
           </Link>
           <Categories />
         </h1>
+        <button onClick={() => setShow(!show)}>
+          <Image src={"/images.png"} width={18} height={18} alt="cart" />
+        </button>
+        <div
+          className="cart fixed z-20 top-0 h-screen w-[250px] bg-slate-300 duration-300 p-10 shadow-md"
+          style={{ right: show ? "0px" : "-250px" }}
+        >
+          <button onClick={() => setShow(!show)}>X</button>
+          <h3>Your cart:</h3>
+          <Cart />
+        </div>
       </nav>
     </header>
   );
