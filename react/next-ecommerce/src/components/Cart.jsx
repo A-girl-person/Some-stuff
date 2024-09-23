@@ -1,15 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ProductItem from "./ProductItem";
+import { ShoppingCartContext } from "@/lib/ShoppingCartContext";
 const Cart = () => {
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    const cartItems = JSON.parse(localStorage.getItem("shoppingCart"));
-    setCart(cartItems);
-  }, [setCart]);
-  console.log(cart);
+  const { clearCart, cart } = useContext(ShoppingCartContext);
   return (
     <div>
       <div className="h-[500px] overflow-scroll">
@@ -21,7 +16,7 @@ const Cart = () => {
           <p>Your cart is empty</p>
         )}
       </div>
-      <button className=" text-yellow-700" onClick={() => setCart("")}>
+      <button className=" text-yellow-700" onClick={() => clearCart}>
         Clear cart
       </button>
     </div>

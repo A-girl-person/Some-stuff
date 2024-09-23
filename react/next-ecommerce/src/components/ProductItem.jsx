@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ShoppingCartContext } from "@/lib/ShoppingCartContext";
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, removeItem }) => {
+  const { removeFromCart } = useContext(ShoppingCartContext);
   if (!product) return null;
   return (
     <div className="mb-5">
@@ -15,8 +17,12 @@ const ProductItem = ({ product }) => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div>Quantity: {product.rating.count}</div>
-        <button className="text-red-800">Delete</button>
+        <button
+          className="text-red-800"
+          onClick={() => removeFromCart(product.id)}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );

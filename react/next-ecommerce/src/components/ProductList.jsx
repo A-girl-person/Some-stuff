@@ -5,7 +5,7 @@ import React from "react";
 const ProductList = async () => {
   let data = await fetch(`${process.env.API_URL}/products`);
   let products = await data.json();
-
+  const { setCart, addToCart } = useContext(ShoppingCartContext);
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
       {products.map((product) => {

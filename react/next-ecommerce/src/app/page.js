@@ -7,7 +7,7 @@ export default function Wow() {
     <div>
       <Header />
       <Page />
-      <div className="bg-yellow-500">
+      <div className="bg-yellow-500 text-center">
         <Cookies />
       </div>
     </div>

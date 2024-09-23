@@ -1,21 +1,9 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
+import { ShoppingCartContext } from "@/lib/ShoppingCartContext";
+import React, { useEffect, useContext } from "react";
 
 const AddToCart = ({ product }) => {
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    const shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
-    setCart(shoppingCart);
-  }, [setCart]);
-
-  const addToCart = (product) => {
-    const updatedCart = [...cart, product];
-    localStorage.setItem("shoppingCart", JSON.stringify(updatedCart));
-    setCart(updatedCart);
-  };
-
+  const { addToCart } = useContext(ShoppingCartContext);
   return (
     <button
       className=" bg-yellow-500 text-white rounded-md py-3"
