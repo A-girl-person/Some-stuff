@@ -1,5 +1,5 @@
 "use client";
-import Header from "../Header";
+import Header from "../../login/Header";
 
 import Image from "next/image";
 import Link from "next/link";

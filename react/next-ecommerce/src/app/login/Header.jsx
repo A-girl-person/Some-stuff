@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Categories } from "./categories";
+import { Categories } from "../categories/categories";
 import React from "react";
 import Cart from "@/components/Cart";
 import Image from "next/image";
@@ -27,6 +27,9 @@ function Header() {
           <button onClick={() => setShow(!show)}>X</button>
           <h3>Your cart:</h3>
           <Cart />
+        </div>
+        <div>
+          <p>Login</p>
         </div>
       </nav>
     </header>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useContext } from "react";
 import { ShoppingCartContext } from "@/lib/ShoppingCartContext";
 
-const ProductItem = ({ product, removeItem }) => {
+const ProductItem = ({ product }) => {
   const { removeFromCart } = useContext(ShoppingCartContext);
   if (!product) return null;
   return (

@@ -5,6 +5,7 @@ import ProductItem from "./ProductItem";
 import { ShoppingCartContext } from "@/lib/ShoppingCartContext";
 const Cart = () => {
   const { clearCart, cart } = useContext(ShoppingCartContext);
+  console.log(cart, "cart");
   return (
     <div>
       <div className="h-[500px] overflow-scroll">
@@ -16,7 +17,7 @@ const Cart = () => {
           <p>Your cart is empty</p>
         )}
       </div>
-      <button className=" text-yellow-700" onClick={() => clearCart}>
+      <button className=" text-yellow-700" onClick={() => clearCart()}>
         Clear cart
       </button>
     </div>
