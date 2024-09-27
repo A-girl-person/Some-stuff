@@ -1,6 +1,6 @@
 "use client";
 
-import Continents from "@/components/Continents";
+import ContinentList from "./continents/Continents";
 import "./globals.css";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { Children } from "react";

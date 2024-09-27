@@ -1,14 +1,12 @@
 "use client";
 
-import React from "react";
-import { useQuery, gql } from "@apollo/client";
-import Continents from "@/components/Continents";
+import ContinentList from "./continents/Continents";
 
 export default function Home() {
   return (
     <div>
       <p>
-        <Continents />
+        <ContinentList />
       </p>
     </div>
   );

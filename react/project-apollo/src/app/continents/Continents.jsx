@@ -19,7 +19,7 @@ const ContinentList = () => {
   return (
     <div>
       {data?.continents.map((continent) => (
-        <Link href={`/continents/${continent.code}`}>
+        <Link href={`/countryList/${continent.code}`}>
           <li>{continent.name}</li>
           {console.log(continent.code)}
         </Link>
